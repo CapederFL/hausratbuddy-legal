@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, follow">
+<title>Hilfe · Hausrat Buddy</title>
+<style>
+  :root {
+    --page: #ffffff;
+    --text: #1c1c1e;
+    --muted: #5c5c63;
+    --rule: #d9d9de;
+    --link: #0a58c2;
+    --card: #f4f4f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #111113;
+      --text: #f2f2f4;
+      --muted: #a4a4ad;
+      --rule: #38383d;
+      --link: #74b3ff;
+      --card: #1c1c1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .page { max-width: 42rem; margin: 0 auto; padding: 24px 16px 64px; }
+  header.site { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+  header.site .name { font-weight: 700; color: var(--text); text-decoration: none; margin-right: auto; }
+  header.site nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  a { color: var(--link); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 28px 0 4px; text-wrap: balance; }
+  h2 { font-size: 1.2rem; line-height: 1.3; margin: 36px 0 8px; }
+  h3 { font-size: 1rem; margin: 22px 0 4px; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  .stand { color: var(--muted); margin-bottom: 20px; }
+  .card { background: var(--card); border-radius: 12px; padding: 14px 16px; margin: 12px 0 16px; }
+  .card > :last-child { margin-bottom: 0; }
+  .toc { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .toc li { margin: 0; }
+  footer.site { margin-top: 48px; padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="site">
+  <a class="name" href="index.html">Hausrat Buddy</a>
+  <nav aria-label="Seiten">
+    <a href="privacy.html">Datenschutz</a>
+    <a href="support.html" aria-current="page">Hilfe</a>
+  </nav>
+</header>
+
+<main>
+<h1>Hilfe und häufige Fragen</h1>
+<p class="stand">für die App «Hausrat Buddy» auf iPhone und iPad (ab iOS 26). Stand: 13. Oktober 2026</p>
+
+<div class="card">
+  <p><strong>Frage nicht dabei?</strong> Schreib an <a href="mailto:capederpas@gmail.com">capederpas@gmail.com</a>.</p>
+  <p>Am einfachsten aus der App: «Mehr» › «Hilfe und Kontakt» › «Support kontaktieren». Dann stehen die Version der App und von iOS schon in der Mail. Aus deinem Inventar steht nichts darin.</p>
+</div>
+
+<ul class="toc" aria-label="Themen">
+  <li><a href="#sichern">Sichern</a></li>
+  <li><a href="#wiederherstellen">Wiederherstellen</a></li>
+  <li><a href="#schadenfall">Schadenfall</a></li>
+  <li><a href="#import">Import</a></li>
+  <li><a href="#sperre">App-Sperre</a></li>
+  <li><a href="#garantie">Garantie</a></li>
+  <li><a href="#weiteres">Weiteres</a></li>
+</ul>
+
+<h2 id="sichern">Sichern</h2>
+
+<h3>Wie sichere ich mein Inventar?</h3>
+<p>«Mehr» › «Sicherung» › «Archiv erstellen». Die App schreibt eine ZIP-Datei mit allen Haushalten, Gegenständen, Fotos und Belegen und öffnet das Teilen-Blatt. Leg die Datei dort ab, wo sie einen Verlust des iPhones übersteht: in «Dateien», in iCloud Drive, auf einem Computer oder einem Stick, am besten nicht nur in der Wohnung.</p>
+<p>Sobald du etwas erfasst hast, erinnert dich die Übersicht, wenn es noch keine Sicherung gibt oder die letzte 90 Tage her ist.</p>
+
+<h3>Ist das Archiv verschlüsselt?</h3>
+<p>Nein. Es enthält Werte, Seriennummern und Belege mit Adressen, und wer die Datei hat, kann alles lesen. Dafür lässt es sich auch ohne die App öffnen. Leg es an einen Ort, dem du vertraust.</p>
+
+<h3>Was ist nicht im Archiv?</h3>
+<p>Schadenfälle mit ihren Listen und die Einstellungen der App. Erstellte Listen, die du behalten willst, teilst du aus dem Schadenfall und legst sie selbst ab; das Paket mit Anlagen gleich beim Erstellen.</p>
+
+<h3>Kann ich das Archiv ohne die App öffnen?</h3>
+<p>Ja, auf jedem Computer. Fotos und Belege liegen im Ordner «Dateien», geordnet nach Haushalt und Gegenstand. Alle Angaben stehen in «archiv.json», einer Textdatei. Die Datei «LIESMICH.txt» im Archiv erklärt das noch einmal.</p>
+
+<h2 id="wiederherstellen">Wiederherstellen auf einem neuen iPhone</h2>
+
+<h3>Wie kommt mein Inventar auf das neue iPhone?</h3>
+<ol>
+  <li>Bring die Archiv-Datei auf das neue iPhone, zum Beispiel über iCloud Drive oder «Dateien».</li>
+  <li>Installiere Hausrat Buddy. Auf dem Willkommen-Bildschirm steht «Archiv wiederherstellen». Hast du schon einen Haushalt angelegt: «Mehr» › «Sicherung» › «Archiv wiederherstellen».</li>
+  <li>Wähl die ZIP-Datei. Die App zeigt, was darin ist, und fragt nach.</li>
+  <li>Lass die App offen, bis alles da ist.</li>
+</ol>
+<p>Hast du das neue iPhone aus einer Sicherung des alten eingerichtet (iCloud-Backup oder Computer), sind die Daten der App in der Regel schon mit dabei. Ein eigenes Archiv ist trotzdem die Kopie, die du selbst in der Hand hast.</p>
+
+<h3>Überschreibt das Wiederherstellen etwas?</h3>
+<p>Nein. Die Haushalte aus dem Archiv kommen zu denen dazu, die schon da sind. Gibt es einen mit demselben Namen, heisst der neue «… (wiederhergestellt)». Den, den du nicht mehr brauchst, löschst du unter «Mehr».</p>
+
+<h3>Nach dem Wiederherstellen nennt die App beschädigte oder fehlende Dateien</h3>
+<p>Die Gegenstände sind trotzdem zurück. Eine beschädigte Datei übernimmt die App so, wie sie ist, und nennt sie dir; sieh sie dir an. Eine fehlende nennt sie ebenfalls.</p>
+
+<h3>«Das Archiv ist beschädigt oder unvollständig» oder «Diese Datei ist kein Archiv von Hausrat Buddy»</h3>
+<p>Dann stellt die App nichts wieder her. Vielleicht wurde die Datei nicht ganz übertragen: Hol sie nochmals vom Ort, an dem du sie abgelegt hast, oder nimm eine andere Kopie. Wähl die ZIP-Datei, die du mit «Archiv erstellen» gesichert hast.</p>
+
+<h3>«Dieses Archiv stammt aus einer neueren Version»</h3>
+<p>Aktualisiere die App im App Store und versuch es nochmals.</p>
+
+<h2 id="schadenfall">Schadenfall und Listen</h2>
+
+<h3>Wie erstelle ich die Listen für Polizei und Versicherung?</h3>
+<ol>
+  <li>Öffne auf der Übersicht «Schadenfall» (oder «Mehr» › «Schadenfall und Listen»).</li>
+  <li>Trag unter «Angaben» ein, was du hast: Ereignis, Polizei, Person und Versicherung. Alles ist freiwillig; was fehlt, bleibt auf der Liste leer oder steht dort als Strich.</li>
+  <li>Markiere unter «Gegenstände», was gestohlen, beschädigt oder zerstört ist.</li>
+  <li>Tipp unter «Listen erstellen» auf die Liste, die du brauchst. Sie öffnet sich als Vorschau; von dort teilst oder druckst du sie. Das Paket mit Anlagen öffnet gleich das Teilen-Blatt.</li>
+</ol>
+<p>Es lässt sich nur auflisten, was im Inventar steht. Erfasse fehlende Gegenstände zuerst dort. Was dem Vermieter gehört oder geliehen ist, lässt sich nicht markieren.</p>
+
+<h3>Welche Liste ist wofür?</h3>
+<ul>
+  <li><strong>Schadenliste (PDF):</strong> betroffene Gegenstände mit Werten, Kaufdaten und Belegen, für die Versicherung.</li>
+  <li><strong>Stehlgutliste (PDF):</strong> gestohlene Gegenstände mit Seriennummern und Foto, für die Polizei. Ohne Kaufdaten.</li>
+  <li><strong>Verzeichnis vor und nach dem Ereignis (PDF):</strong> alle Gegenstände davor und danach, zum Unterschreiben.</li>
+  <li><strong>Inventarverzeichnis (PDF):</strong> alles, was du besitzt, mit Werten. Zum Aufbewahren, getrennt von der Wohnung.</li>
+  <li><strong>Schadenliste als Tabelle (CSV):</strong> dieselben Positionen und Nummern, für Excel.</li>
+  <li><strong>Paket mit Anlagen (ZIP):</strong> Schadenliste, Tabelle und alle Belege und Fotos der betroffenen Gegenstände, benannt nach ihrer Nummer.</li>
+</ul>
+
+<h3>Warum lässt sich eine Liste nicht antippen?</h3>
+<p>Für die Schadenliste, die Tabelle und das Paket muss mindestens ein Gegenstand markiert sein, für die Stehlgutliste mindestens einer als gestohlen. Bei den PDF-Listen steht der Grund darunter. Während die App eine Liste erstellt, sind die anderen kurz gesperrt.</p>
+
+<h3>Unter einer Liste steht «2 Gegenstände ohne Wert»</h3>
+<p>Das ist ein Hinweis, kein Hindernis: Die Liste lässt sich trotzdem erstellen. Die Nummern in der Klammer sagen, welche Gegenstände gemeint sind.</p>
+
+<h3>Ich habe das Aktenzeichen der Polizei noch nicht</h3>
+<p>Trag es nach, wenn du es hast, und erstelle die Listen neu. Unter «Erstellte Listen» siehst du, was du wann erstellt hast. Listen mit demselben «Datenstand» stammen aus demselben Stand des Inventars; erstellst du eine Liste beim selben Datenstand noch einmal, ersetzt sie die frühere.</p>
+
+<h3>Was bedeutet die Checkliste?</h3>
+<p>Sie ist eine Gedankenstütze, keine Rechtsauskunft. Was wann zu melden ist, steht in den Bedingungen deiner Versicherung. Die App prüft keinen Anspruch und gibt keine Versicherungsempfehlung.</p>
+
+<h3>Der Schaden ist erledigt</h3>
+<p>«Fall abschliessen». Der Fall bleibt mit seinen Listen erhalten und lässt sich wieder öffnen. Was gestohlen oder zerstört ist, kannst du dabei im Inventar als ausgeschieden markieren: Es bleibt als Nachweis und zählt nicht mehr mit.</p>
+
+<h2 id="import">Liste importieren</h2>
+
+<h3>Ich habe schon eine Liste in Excel oder Numbers</h3>
+<ol>
+  <li>Sichere die Tabelle als CSV (in Excel «Speichern unter», in Numbers «Exportieren» › CSV).</li>
+  <li>«Mehr» › «Liste importieren (CSV)» › «Datei wählen».</li>
+  <li>Die App zeigt, welche Spalten sie erkannt hat, welche sie auslässt und die ersten Gegenstände. Erst mit dem Knopf darunter, etwa «12 Gegenstände importieren», kommt etwas ins Inventar.</li>
+</ol>
+<p>Die erste Zeile enthält die Spaltennamen, etwa Name, Raum, Menge, Marke, Seriennummer, Kaufdatum, Kaufpreis und Neuwert. Zwischen den Spalten darf ein Komma, ein Strichpunkt oder ein Tabulator stehen. Zeilen ohne Namen überspringt die App. Räume, die es noch nicht gibt, legt sie an. Fotos und Belege fügst du danach am Gegenstand hinzu.</p>
+
+<h3>«In der ersten Zeile steht keine Spalte für den Namen»</h3>
+<p>Die App braucht eine Spalte für den Namen, zum Beispiel «Name» oder «Bezeichnung». Benenne die Spalte in der Tabelle um und exportiere sie neu.</p>
+
+<h2 id="sperre">App-Sperre</h2>
+
+<h3>Wie sperre ich die App?</h3>
+<p>«Mehr» › «Schutz» › «Mit Face ID sperren» (je nach Gerät Touch ID oder Gerätecode). Die App verlangt dann beim Öffnen Face ID oder deinen Gerätecode und zeigt im App-Umschalter nichts von deinem Inventar. Nach einem kurzen Wechsel in eine andere App bleibt sie eine Minute lang offen.</p>
+
+<h3>Face ID erkennt mich nicht</h3>
+<p>Dann fragt iOS nach dem Gerätecode. Die App hat kein eigenes Passwort, das du vergessen könntest.</p>
+
+<h3>Der Schalter springt zurück</h3>
+<p>Auf dem Gerät ist weder ein Code noch Face ID eingerichtet, oder die Prüfung wurde abgebrochen. Richte zuerst in den Einstellungen von iOS einen Code ein.</p>
+
+<h3>Was schützt die Sperre nicht?</h3>
+<p>Sie verdeckt die App, nimmt deine Gegenstände aus der Suche des iPhones und sperrt den Kurzbefehl «Seriennummer nachschlagen». Sie verschlüsselt nichts zusätzlich, und ein Archiv oder eine Liste, die du weitergegeben hast, schützt sie nicht.</p>
+
+<h2 id="garantie">Garantie und Mitteilungen</h2>
+
+<h3>Woher kommen die Fristen?</h3>
+<p>Die App berechnet sie aus dem Übergabedatum (oder dem Kaufdatum), der Art des Kaufs und dem Land des Haushalts. Neben jeder Frist steht die Regel, aus der sie stammt. Das ist eine Orientierung, keine Rechtsauskunft: Im Einzelfall kann etwas anderes gelten, etwa wenn beim Kauf etwas Abweichendes vereinbart wurde.</p>
+
+<h3>Wie werde ich erinnert?</h3>
+<p>«Mehr» › «Mitteilungen» › «Vor Ablauf der Garantie erinnern». Die App meldet sich 30 und 7 Tage, bevor eine gesetzliche Gewährleistung oder eine Herstellergarantie endet, jeweils um 9 Uhr. Die Mitteilung nennt den Gegenstand; ein Tipp öffnet ihn. Hast du Mitteilungen einmal abgelehnt, erlaubst du sie in den Einstellungen von iOS.</p>
+
+<h2 id="weiteres">Weiteres</h2>
+
+<h3>«Dein Inventar lässt sich gerade nicht öffnen»</h3>
+<p><strong>Lösch die App nicht,</strong> sonst gehen die Daten verloren. Starte das iPhone neu und öffne die App nochmals. Hilft das nicht, schreib dem Support über den Knopf auf diesem Bildschirm.</p>
+
+<h3>Ich habe einen Gegenstand versehentlich gelöscht</h3>
+<p>Löschst du in einer Liste, erscheint unten gleich «Rückgängig». Einige Sekunden lang holt das den Gegenstand mit Fotos und Belegen zurück. Danach hilft nur ein Archiv. Im Rundgang gibt es kein «Rückgängig»: Was du dort aus «In diesem Rundgang» wischst, ist sofort gelöscht.</p>
+
+<h3>Etwas ist verkauft, verschenkt oder gestohlen</h3>
+<p>Trag am Gegenstand unter «Verbleib» ein, was damit passiert ist, statt ihn zu löschen. Er bleibt mit Fotos und Belegen als Nachweis und zählt in den Summen nicht mehr mit.</p>
+
+<h3>Wie lösche ich alles?</h3>
+<p>Wenn du die App löschst, sind alle ihre Daten auf dem Gerät gelöscht. Archive und Listen, die du abgelegt oder verschickt hast, bleiben dort, wo sie sind.</p>
+
+<h3>Kann ich das Inventar auf zwei Geräten oder mit meiner Partnerin, meinem Partner führen?</h3>
+<p>Die App arbeitet auf einem Gerät und gleicht nichts ab. Ein Archiv bringt das Inventar auf ein zweites Gerät; was du danach auf dem einen änderst, erscheint nicht auf dem anderen.</p>
+
+<h3>Ist das eine Versicherungs-App?</h3>
+<p>Nein. Hausrat Buddy ist ein Inventar. Die App empfiehlt keine Versicherungssumme, bewertet keine Versicherung und gibt keine Daten an Versicherer weiter. Was versichert ist, steht in deinen eigenen Unterlagen.</p>
+</main>
+
+<footer class="site">
+  <a href="index.html">Hausrat Buddy</a> · <a href="privacy.html">Datenschutz</a>
+</footer>
+
+</div>
+</body>
+</html>
