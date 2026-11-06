@@ -65,7 +65,7 @@
 
 <main>
 <h1>Hilfe und häufige Fragen</h1>
-<p class="stand">für die App «Hausrat Buddy» auf iPhone und iPad (ab iOS 26). Stand: 14. Oktober 2026</p>
+<p class="stand">für die App «Hausrat Buddy» auf iPhone und iPad (ab iOS 26). Stand: 30. Oktober 2026</p>
 
 <div class="card">
   <p><strong>Frage nicht dabei?</strong> Schreib an <a href="mailto:capederpas@gmail.com">capederpas@gmail.com</a>.</p>
@@ -142,6 +142,10 @@
   <li><strong>Paket mit Anlagen (ZIP):</strong> Schadenliste, Tabelle und alle Belege und Fotos der betroffenen Gegenstände, benannt nach ihrer Nummer.</li>
 </ul>
 
+<h3>Die Tabelle in Excel oder Numbers</h3>
+<p>Die Tabellen aus dem Schadenfall und unter «Mehr» › «Inventarliste (CSV, PDF)» trennen die Spalten mit Strichpunkten. Beträge gelten je Stück und stehen ohne Tausendertrennzeichen, mit dem Dezimalzeichen des Landes deines Haushalts: Komma in Deutschland und Österreich, Punkt in der Schweiz und in Liechtenstein, so wie Excel es mit den Einstellungen dieses Landes erwartet.</p>
+<p>Seriennummern, Merkmale und Beträge in einer anderen Währung stehen in der Datei als <code>="…"</code>, wo ein Tabellenprogramm sie sonst umwandeln würde, etwa eine lange Seriennummer in eine gerundete Zahl, 007341 in 7341 oder 12-05 in ein Datum. Beginnt ein anderer Eintrag mit =, +, - oder @, steht ein Apostroph davor, damit er nicht als Formel läuft. Der Import der App liest beides wieder so, wie du es eingetragen hast.</p>
+
 <h3>Warum lässt sich eine Liste nicht antippen?</h3>
 <p>Für die Schadenliste, die Tabelle und das Paket muss mindestens ein Gegenstand markiert sein, für die Stehlgutliste mindestens einer als gestohlen. Bei den PDF-Listen steht der Grund darunter. Während die App eine Liste erstellt, sind die anderen kurz gesperrt.</p>
 
@@ -149,7 +153,7 @@
 <p>Das ist ein Hinweis, kein Hindernis: Die Liste lässt sich trotzdem erstellen. Die Nummern in der Klammer sagen, welche Gegenstände gemeint sind.</p>
 
 <h3>Ich habe das Aktenzeichen der Polizei noch nicht</h3>
-<p>Trag es nach, wenn du es hast, und erstelle die Listen neu. Unter «Erstellte Listen» siehst du, was du wann erstellt hast. Listen mit demselben «Datenstand» stammen aus demselben Stand des Inventars; erstellst du eine Liste beim selben Datenstand noch einmal, ersetzt sie die frühere.</p>
+<p>Trag es nach, wenn du es hast, und erstelle die Listen neu. Unter «Erstellte Listen» siehst du, was du wann erstellt hast. Listen mit demselben «Datenstand» beruhen auf denselben Angaben. Erstellst du eine Liste am selben Tag und ohne Änderung noch einmal, ersetzt sie die frühere; nach einer Änderung oder an einem anderen Tag bleibt die frühere daneben erhalten.</p>
 
 <h3>Was bedeutet die Checkliste?</h3>
 <p>Sie ist eine Gedankenstütze, keine Rechtsauskunft. Was wann zu melden ist, steht in den Bedingungen deiner Versicherung. Die App prüft keinen Anspruch und gibt keine Versicherungsempfehlung.</p>
@@ -167,8 +171,20 @@
 </ol>
 <p>Die erste Zeile enthält die Spaltennamen, etwa Name, Raum, Menge, Marke, Seriennummer, Kaufdatum, Kaufpreis und Neuwert. Zwischen den Spalten darf ein Komma, ein Strichpunkt oder ein Tabulator stehen. Zeilen ohne Namen überspringt die App. Räume, die es noch nicht gibt, legt sie an. Fotos und Belege fügst du danach am Gegenstand hinzu.</p>
 
+<h3>Gilt der Preis für ein Stück oder für alle?</h3>
+<p>Für ein Stück, wie überall in der App. Steht in einer Zeile die Menge 3 und der Neuwert 300, sind es zusammen 900; die Vorschau zeigt beides. Eine Spalte mit Summen, etwa «Wert gesamt», übernimmt die App nicht als Betrag; sie steht dann unter «Nicht übernommen».</p>
+
+<h3>Ein Neuwert ohne Datum</h3>
+<p>Hat die Liste eine Spalte für das Datum des Neuwerts, etwa «Neuwert Stand», übernimmt die App es. Sonst gilt das Kaufdatum als Stand des Werts, nicht der Tag des Imports, denn ein Wert aus einer alten Liste ist nicht von heute. Die Vorschau sagt vorher, wie viele das sind, und die Listen im Schadenfall nennen diesen Tag als Stand. Fehlen beide Daten, ist der Stand unbekannt, und der Gegenstand erscheint unter «Neuwert älter als ein Jahr».</p>
+
+<h3>Wie viel übernimmt ein Import ohne Pro?</h3>
+<p>Zeilen mit eigenen oder gemeinsamen Sachen nehmen gratis Plätze ein. Ohne Pro übernimmt der Import davon die ersten, bis die zehn erfasst sind. Zeilen, die laut Spalte «Gehört» dem Vermieter oder Dritten gehören (etwa «Vermieter» oder «geliehen»), übernimmt er immer; eine Zeile ohne Angabe gilt als eigene Sache. Wie viele Zeilen es werden, sagt die App vor dem Import, und erst der Knopf darunter fügt etwas hinzu.</p>
+
 <h3>«In der ersten Zeile steht keine Spalte für den Namen»</h3>
 <p>Die App braucht eine Spalte für den Namen, zum Beispiel «Name» oder «Bezeichnung». Benenne die Spalte in der Tabelle um und exportiere sie neu.</p>
+
+<h3>Die Datei ist zu gross oder hat zu viele Zeilen</h3>
+<p>Ein Import liest Dateien bis 5 MB und mit höchstens 10&#8239;000 Zeilen unter den Spaltennamen. Eine Liste von Gegenständen ist meist viel kleiner; vielleicht ist es nicht die richtige Datei. Eine sehr lange Liste teilst du in mehrere Dateien auf.</p>
 
 <h2 id="sperre">App-Sperre</h2>
 
@@ -187,7 +203,8 @@
 <h2 id="garantie">Garantie und Mitteilungen</h2>
 
 <h3>Woher kommen die Fristen?</h3>
-<p>Die App berechnet sie aus dem Übergabedatum (oder dem Kaufdatum), der Art des Kaufs und dem Land des Haushalts. Neben jeder Frist steht die Regel, aus der sie stammt. Das ist eine Orientierung, keine Rechtsauskunft: Im Einzelfall kann etwas anderes gelten, etwa wenn beim Kauf etwas Abweichendes vereinbart wurde.</p>
+<p>Die App berechnet sie aus dem Übergabedatum (oder dem Kaufdatum), der Art des Kaufs und dem Land des Haushalts. Neben jeder Frist steht die Regel, aus der sie stammt. Das ist eine Orientierung, keine Rechtsauskunft: Im Einzelfall kann etwas anderes gelten, etwa wenn beim Kauf etwas Abweichendes vereinbart wurde. Gekauft in einem anderen Land, zum Beispiel in einem Schweizer Shop? Dann kann das Recht des Verkäufers gelten.</p>
+<p>Ist die Art des Kaufs «Gebraucht vom Händler», trägst du darunter ein, ob beim Kauf eine Frist von 12 Monaten vereinbart wurde, in der Schweiz auch, ob die Gewährleistung ausgeschlossen wurde. Schalte das nur ein, wenn es ausdrücklich so vereinbart wurde.</p>
 
 <h3>Wie werde ich erinnert?</h3>
 <p>«Mehr» › «Mitteilungen» › «Vor Ablauf der Garantie erinnern». Die App meldet sich 30 und 7 Tage, bevor eine gesetzliche Gewährleistung oder eine Herstellergarantie endet, jeweils um 9 Uhr. Die Mitteilung nennt den Gegenstand; ein Tipp öffnet ihn. Ist die App-Sperre an, nennt sie ihn nicht. Hast du Mitteilungen einmal abgelehnt, erlaubst du sie in den Einstellungen von iOS.</p>
@@ -195,13 +212,20 @@
 <h2 id="pro">Pro und Preis</h2>
 
 <h3>Was ist gratis?</h3>
-<p>Zehn Gegenstände mit allen Funktionen, auch die Listen im Schadenfall. Gezählt werden deine eigenen und gemeinsamen Sachen, die noch da sind, in allen Haushalten. Was dem Vermieter gehört, was geliehen ist und was du als verkauft, verschenkt oder gestohlen eingetragen hast, zählt nicht. Den Stand siehst du auf der Übersicht und unter «Mehr» › «Hausrat Buddy Pro».</p>
+<p>Zehn Gegenstände mit allen Funktionen, auch die Listen im Schadenfall. Gezählt werden deine eigenen und gemeinsamen Sachen, die noch da sind, in allen Haushalten zusammen. Was dem Vermieter gehört, was geliehen ist und was unter «Verbleib» nicht mehr «Vorhanden» ist, etwa verkauft oder gestohlen, zählt nicht. Den Stand siehst du auf der Übersicht und unter «Mehr» › «Hausrat Buddy Pro».</p>
+
+<h3>Was geht, wenn die zehn erfasst sind?</h3>
+<p>Ohne Pro kommen keine weiteren eigenen Sachen dazu, weder neu noch als «Kopie» noch im Rundgang. Was dem Vermieter gehört oder geliehen ist, erfasst du weiter, auch als «Kopie». Ob ein neuer Gegenstand mitzählt, prüft die App beim Sichern mit ✓, denn erst dann steht fest, wem er gehört. Zählt er mit, zeigt sie das Angebot, und das Formular bleibt mit allem offen, was du eingetragen hast.</p>
+
+<h3>Ich will etwas zurückstellen, und die App zeigt das Angebot</h3>
+<p>Was wieder mitzählt, braucht einen freien Platz wie ein neuer Gegenstand: wenn du «Gehört» von «Vermieter» oder «Dritten (geliehen)» auf «Mir» oder «Gemeinsam» stellst, oder einen Gegenstand unter «Verbleib» wieder auf «Vorhanden» (in der Liste «Wieder vorhanden»). Ohne freien Platz ändert die App nichts und sagt, warum.</p>
+<p>Ein Versehen stellst du trotzdem richtig: Hat der Gegenstand mitgezählt, als du sein Formular geöffnet hast, stellst du ihn gleich im selben Formular zurück, auch an der Grenze. Was du früher dem Vermieter oder Dritten zugeordnet oder als nicht mehr vorhanden eingetragen hast, braucht zum Zurückstellen einen freien Platz.</p>
 
 <h3>Was bringt Pro?</h3>
 <p>Unbegrenzt viele Gegenstände. Pro ist ein einmaliger Kauf, kein Abo. Den Preis zeigt der App Store in deiner Währung.</p>
 
 <h3>Was passiert ohne Kauf mit meinen Daten?</h3>
-<p>Nichts. Alles bleibt sichtbar und lässt sich ändern, exportieren, sichern und löschen, auch über zehn Gegenstände hinaus, etwa nach dem Wiederherstellen eines Archivs. Nur weitere Gegenstände brauchen Pro. Ein Import übernimmt ohne Pro die ersten Zeilen bis zur Grenze und sagt das vorher.</p>
+<p>Nichts. Alles bleibt sichtbar und lässt sich ändern, exportieren, sichern und löschen, auch über zehn Gegenstände hinaus, etwa nach dem Wiederherstellen eines Archivs; das Wiederherstellen ist nie begrenzt. Pro brauchen nur weitere eigene Sachen und, an der Grenze, was wieder mitzählen soll (siehe oben). Was ein Import ohne Pro übernimmt, steht unter <a href="#import">Liste importieren</a>.</p>
 
 <h3>Gilt der Kauf für meine Familie?</h3>
 <p>Ja. Mit der Familienfreigabe von Apple gilt Pro auch für bis zu fünf weitere Personen deiner Familie, jeweils auf ihren eigenen Geräten.</p>
@@ -221,7 +245,7 @@
 <p><strong>Lösch die App nicht,</strong> sonst gehen die Daten verloren. Starte das iPhone neu und öffne die App nochmals. Hilft das nicht, schreib dem Support über den Knopf auf diesem Bildschirm.</p>
 
 <h3>Ich habe einen Gegenstand versehentlich gelöscht</h3>
-<p>Löschst du in einer Liste, erscheint unten gleich «Rückgängig». Einige Sekunden lang holt das den Gegenstand mit Fotos und Belegen zurück. Danach hilft nur ein Archiv. Im Rundgang gibt es kein «Rückgängig»: Was du dort aus «In diesem Rundgang» wischst, ist sofort gelöscht.</p>
+<p>Löschst du in einer Liste, erscheint unten gleich «Rückgängig». Einige Sekunden lang holt das den Gegenstand mit Fotos und Belegen zurück. Danach hilft nur ein Archiv. Bei sehr vielen Fotos und Belegen (zusammen über 100 MB) gibt es kein «Rückgängig»; das sagt die App, bevor sie löscht. Im Rundgang gibt es kein «Rückgängig»: Was du dort aus «In diesem Rundgang» wischst, ist sofort gelöscht.</p>
 
 <h3>Etwas ist verkauft, verschenkt oder gestohlen</h3>
 <p>Trag am Gegenstand unter «Verbleib» ein, was damit passiert ist, statt ihn zu löschen. Er bleibt mit Fotos und Belegen als Nachweis und zählt in den Summen nicht mehr mit.</p>
